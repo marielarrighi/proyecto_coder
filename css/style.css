@@ -5,16 +5,16 @@
 }
 /*estilo header*/
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0px;
     background-image: linear-gradient(to right top, #2f6578, #446d81, #56768a, #677f91, #778899);
     width: auto;
+    justify-content: end;
 }
 
 .logoprincipal{
-    height: 180px;
+    height: 210px;
+    padding-inline-start: 15px;
+    padding-top: 25px;
 }
 
 .homelogo {
@@ -32,9 +32,11 @@ header {
     
 }
 .lista {
-    border-bottom: 1px solid #050505;
-    transition: .3s ease-in-out
-} 
+    border-bottom: 1px solid #fafafa;
+    transition: .3s ease-in-out;
+ 
+}
+
 .lista:hover {
     border-bottom: #41A4C3;
     transition: all .3s ease-in-out;
@@ -58,7 +60,9 @@ li{
 }
 
 h1 {  
-    justify-content: space-evenly;
+    font-family: serif; 
+    font-size: large;
+    justify-content: center;
     position: absolute;
     top: 250px;
     left: 450px;
@@ -88,7 +92,7 @@ padding: 10px;
 
 /*GRID*/ 
 
-.gridcontenido { 
+/*.gridcontenido { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -110,7 +114,7 @@ padding: 10px;
     height: 400px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     
-}
+}*/
 
 /*estilo footer*/ 
 
