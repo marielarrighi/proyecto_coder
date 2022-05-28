@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../Img/Logo.png">
     <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Bienvenidos a Arrighi Propiedades</title>
+     
 </head>
 <body>
-
-    <header> 
+    <!--Headear-->
+    <header>  
         <a href= "../index.html" > <img class="logoprincipal" src="../Img/logo sin fondo.png" alt="Arrighi Propiedades">  
-        <nav class="homelogo">
-            <ul class="homelista">
-                <li  class="lista"><a href= "../index.html" > Inicio </a></li>
-                <li  class="lista"><a href= "../Pages/propiedades.html" > Propiedades </a></li>
-                <li  class="lista"><a href= "../Pages/tasaciones.html" > Tasaciones </a></li>
-                <li  class="lista"><a href= "../Pages/ubicacion.html" > Ubicacion </a></li> 
-                <li  class="lista"> <a href= "../Pages/contacto.html" > Contacto </a></li>
-       
-            </ul>
-        </nav>
-    </header>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html" > INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Pages/propiedades.html" > PROPIEDADES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Pages/tasaciones.html" > TASACIONES </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Pages/ubicacion.html"> UBICACION </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/contacto.html" > CONTACTO</a>
+                  </li>
+              </ul> 
+
+</header>
+    <!--Main-->
     <main>
         <div class="bannermedio">
         <img src="../img/+hm.jpg" alt="">
@@ -32,62 +43,102 @@
     <p>Para que podamos tasar correctamente su propiedad, por favor complete el siguiente 
         formulario y nos comunicaremos con usted y programaremos una cita a la brevedad.</p>
 
-    <form action="">
-        <label for="Nombre">Nombre</label>
-        <input type="text" name="Nombre" id="">
-    </form>
-    
-    <form action="">
-        <label for="Apellido">Apellido</label>
-        <input type="text" name="Apellido" id="">
-    </form>
-        <form action="">
-            <label for="Telefono">Telefono</label>
-            <input type="text" name="Telefono" id="">
-        </form>
-    
-        <form action="">
-            <label for="Mail">Correo Electronico</label>
-            <input type="email" name="Correo Electronico" id="">
-        </form>
-        <form action="">
-            <label for="Mail">Direccion de la Propiedad</label>
-            <input type="email" name="Direccion de la Propiedad" id="">
-        </form>
-            <h3>Tipo de Propiedad</h3>
 
-            <form action="Tipo de Propiedad" >
-                <select name="Tipo de Propiedad" id="">
-                <option value="Casa">Casa</option>
-                <option value="Departamento">Departamento</option>
-                <option value="Local">Local</option>
-                <option value="Otros">Otros</option>
-            </select>
-            </form>
 
-            <h3>Tipo de Operacion</h3>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip01">Nombre</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombre" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip02">Apellido</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellido" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  <div class="invalid-tooltip">
+                    Please provide a valid email.
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip03">Direccion De La Propiedad a Tasar</label>
+                <input type="text" class="form-control" id="validationTooltip03" placeholder="Direccion De La Propiedad a Tasar" required>
+                <div class="invalid-tooltip">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationTooltip04">Supercifie Total</label>
+                <input type="text" class="form-control" id="validationTooltip04" placeholder="Superficie Total" required>
+                <div class="invalid-tooltip">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationTooltip05">Telefono</label>
+                <input type="text" class="form-control" id="validationTooltip05" placeholder="Telefono" required>
+                <div class="invalid-tooltip">
+                  Please provide a valid zip.
+                </div>
+              </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Tipo de Propiedad</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Casa
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Departamento
+                      </label>
+                    </div>
+                    <div class="form-check disabled">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                      <label class="form-check-label" for="gridRadios3">
+                        Otro
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
 
-<form action="">
-<div>Venta
-    <input type="radio" name="Operacion" value="Venta">
-</div>
-<div>Alquiler
-    <input type="radio" name="Operacion" value="Alquiler">
-</div>
-<div>
-    <input type="submit" value="Enviar">
-</div>
-</form>
+            <div class="form-row">
+                <div class="col-md-8 mb-12">
+                <label for="exampleFormControlTextarea1">Comentarios / Observaciones </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su comentario" required></textarea>
+            </div>
+             </div>
+            <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+          </form>
 
 </main>
+<!--Footer-->
 <footer> 
-
-    <p class="parrafofooter">
-        Ubicacion: Laprida 271, Lomas de Zamora · Telefono: 011-2009-7487 · Mail: info@arrighipropiedades. com ·   
-    </p>
-    <p>Seguinos en nuestras redes</p>
-    
-    <img src="../Img/iconos redes svg.svg" alt="Arrighi Propiedades Redes">
+    <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight"> Ubicacion: Laprida 271, Lomas de Zamora · Telefono: 011-2009-7487 · Mail: info@arrighipropiedades. com ·</div>
+        <div class="p-2 bd-highlight">Seguinos en nuestras redes</div>
+        <div class="p-2 bd-highlight"><img src="../Img/iconos redes svg.svg" alt="Arrighi Propiedades Redes"></div>
+      </div>
+    </footer>
+   
     <!--Boton de whatsapp-->
     <div class="container-boton">
         <a href="https://wa.me/+5491161345076?text=Quiero recibir mas informacion" target="_blank">
@@ -95,7 +146,8 @@
         </a>
     </div>
  <!-- Fin de Boton de whatsapp-->
-</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
